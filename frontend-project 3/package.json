@@ -1,0 +1,42 @@
+{
+  "name": "autoauction",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "start": "tsx server.ts --prod",
+    "showcase": "npm run build && tsx server.ts --prod",
+    "wifi": "npm run build && tsx server/wifi-tunnel.ts",
+    "monitor:db": "tsx server/monitors/db-watch.ts",
+    "monitor:security": "tsx server/monitors/security-watch.ts",
+    "monitor:stream": "tsx server/monitors/stream-watch.ts",
+    "build": "vite build",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.10",
+    "@types/pg": "^8.23.1",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.3.2",
+    "@types/react-dom": "^19.3.0",
+    "@types/ws": "^8.18.2",
+    "@vitejs/plugin-react": "^6.3.0",
+    "express": "^4.21.2",
+    "lucide-react": "^1.80.0",
+    "pg": "^8.23.1",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.7",
+    "recharts": "^3.11.1",
+    "tailwindcss": "^4.3.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vite-plugin-pwa": "^2.0.0",
+    "ws": "^8.23.0"
+  }
+}
